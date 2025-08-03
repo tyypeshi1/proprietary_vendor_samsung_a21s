@@ -7,3 +7,11 @@ soong_namespace {
         "vendor/samsung/a21s-common",
     ],
 }
+
+prebuilt_etc {
+    name: "libnfc-sec-vendor.conf",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/libnfc-sec-vendor.conf",
+    filename_from_src: true,
+    soc_specific: true,
+}
